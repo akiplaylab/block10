@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#83d7ff">
     <meta name="apple-mobile-web-app-title" content="ブロック 10">
     <meta name="description" content="数の組み合わせを楽しく学び、計算力の土台をつくる算数学習ゲーム。">
-    <meta property="og:title" content="ブロック 10 | 遊んで学ぶ足し算・引き算">
+    <meta property="og:title" content="ブロック 10 | 遊んで学ぶ足し算">
     <meta property="og:description" content="数の組み合わせを楽しく学び、計算力の土台をつくる算数学習ゲーム。">
     <meta property="og:type" content="website">
     <link rel="canonical" href="https://akiplaylab.github.io/block10/">
@@ -16,13 +16,13 @@
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="虹と雲を背景にした「ブロック 10」のロゴ、7 + ? = 10 の式、青7個とオレンジ3個のブロック、ピンクの「あそぶ」ボタン">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ブロック 10 | 遊んで学ぶ足し算・引き算">
+    <meta name="twitter:title" content="ブロック 10 | 遊んで学ぶ足し算">
     <meta name="twitter:description" content="数の組み合わせを楽しく学び、計算力の土台をつくる算数学習ゲーム。">
     <meta name="twitter:image" content="https://akiplaylab.github.io/block10/ogp.png">
     <meta name="twitter:image:alt" content="虹と雲を背景にした「ブロック 10」のロゴ、7 + ? = 10 の式、青7個とオレンジ3個のブロック、ピンクの「あそぶ」ボタン">
     <link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <title>ブロック 10 | あそんで まなぶ たしざん・ひきざん</title>
+    <title>ブロック 10 | あそんで まなぶ たしざん</title>
   </head>
   <body>
     <div class="scenery" aria-hidden="true">
@@ -89,13 +89,6 @@
       <button id="sound" class="utility sound" type="button" aria-label="おと" aria-pressed="true">
         <span class="speaker" aria-hidden="true"></span><span id="sound-state" aria-hidden="true">オン</span>
       </button>
-      <fieldset id="operation-settings">
-        <legend>けいさん</legend>
-        <div class="operations">
-          <label><input type="radio" name="operation" value="addition" checked><span class="operation-option"><span data-operator="+" aria-hidden="true"></span>たしざん</span></label>
-          <label><input type="radio" name="operation" value="subtraction"><span class="operation-option"><span data-operator="−" aria-hidden="true"></span>ひきざん</span></label>
-        </div>
-      </fieldset>
       <fieldset>
         <legend>こたえかた</legend>
         <label class="answer-option">
@@ -131,6 +124,13 @@
             <b class="preview-input">3</b>
           </span>
         </label>
+      </fieldset>
+      <fieldset id="operation-settings">
+        <legend>けいさん</legend>
+        <div class="operations">
+          <label><input type="radio" name="operation" value="addition" checked><span class="operation-option"><span data-operator="+" aria-hidden="true"></span>たしざん</span></label>
+          <label><input type="radio" name="operation" value="subtraction"><span class="operation-option"><span data-operator="−" aria-hidden="true"></span>ひきざん</span></label>
+        </div>
       </fieldset>
       <form method="dialog"><button id="settings-close" class="utility" type="submit">とじる</button></form>
       <button id="reset-open" type="button">はじめの せっていに もどす</button>
